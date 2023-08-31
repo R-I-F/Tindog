@@ -1,0 +1,12 @@
+ Go to your Netlify home page
+- In the "Sites" panel, select the problematic site
+- On the site overview page, select the "Deploys" tab
+- In the upper-left panel, select the "⚙︎ Deploy settings" button
+- In the "Continuous Deployment" section, find the "Build settings" panel, then click its "Edit settings" button
+- In the "Build command:" input, remove "npm run build" (clear the input)
+- In the "Publish directory:" input, remove "dist" (clear the input)
+- Click the "Save" button
+- At the top of the page, select the "Deploys" tab again
+- In the second panel down, find the "Trigger deploy" dropdown
+- Select the "Clear cache and deploy site" option
+- Sit back and watch the site as it's being redeployed

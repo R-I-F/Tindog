@@ -42,16 +42,8 @@ function disLike(){
     }, 750);
 }
 
-function getNewDog(){
-    if (dogIndexesArray.length){
-        currentDog = new Dogs(getCurrentDogObject())
-    }
-}
-
-
 function render(){
-        document.getElementById("pic-container-el").
-        innerHTML = currentDog.getDogHtml()
+        document.getElementById("pic-container-el").innerHTML = currentDog.getDogHtml()
         document.getElementById("like-container-el").
         addEventListener("click", like)
         document.getElementById("dis-like-container-el").

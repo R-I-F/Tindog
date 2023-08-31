@@ -1,10 +1,7 @@
 import { Dogs } from "./dogclass.js"
 import dogData from "./data.js"
 
-
-let dogIndexesArray = []
-dogData.forEach((dog, index) => { dogIndexesArray.push(index) }) 
-// measure the data arraylength and provide an array of indexes as dogArray
+const dogIndexesArray = dogData.map((dog, index) => index)
 
 function getCurrentDogIndex(){
     const currentDogIndex = dogIndexesArray.shift()
